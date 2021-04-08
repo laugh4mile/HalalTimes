@@ -45,9 +45,9 @@
             class="sr-only pis"
             @change="addProfile"
           />
-              <span class="text-xs font-color-black-300 mt-2 text-center"
-                >* 이미지를 클릭하면 프로필 사진을 변경할 수 있어요</span
-              >
+          <span class="text-xs font-color-black-300 mt-2 text-center"
+            >* 이미지를 클릭하면 프로필 사진을 변경할 수 있어요</span
+          >
         </div>
       </article>
       <article class="w-1/2 h-auto mx-2 my-10">
@@ -106,15 +106,14 @@
     </section>
     <section class="flex">
       <article class="flex flex-col w-1/2">
-        <span
-          class="G-market-sans-B text-2xl my-4 mx-auto px-1 border-line"
+        <span class="G-market-sans-B text-2xl my-4 mx-auto px-1 border-line"
           >최근 북마크한 식당</span
         >
         <div class="bg-white border-line-full mx-4">
-        <section v-for="(bookmark, index) in bookmarks" :key="index">
-          <bookmark-design :value="bookmark" />
-        </section>
-        <!-- <restaurant-card-small
+          <section v-for="(bookmark, index) in bookmarks" :key="index">
+            <bookmark-design :value="bookmark" />
+          </section>
+          <!-- <restaurant-card-small
             v-for="bookmark in bookmarks.slice(0, 5)"
             :key="bookmark.restaurantId"
             :restaurantId="bookmark.restaurantId"
@@ -127,15 +126,14 @@
         </div>
       </article>
       <article class="flex flex-col w-1/2">
-        <span
-          class="G-market-sans-B text-2xl my-4 mx-auto px-1 border-line"
+        <span class="G-market-sans-B text-2xl my-4 mx-auto px-1 border-line"
           >최근 활동 기록</span
         >
         <div class="bg-white border-line-full mx-4">
-        <section v-for="(review, index) in reviews.slice(0, 5)" :key="index">
-          <review-design :value="review" />
-        </section>
-        <!-- <review-card-small
+          <section v-for="(review, index) in reviews.slice(0, 5)" :key="index">
+            <review-design :value="review" />
+          </section>
+          <!-- <review-card-small
             v-for="review in reviews.slice(0, 5)"
             :key="review.id_review"
             :id_store="review.id_store"
@@ -149,8 +147,7 @@
         </div>
       </article>
     </section>
-
-    <section class="">
+    <section class="mx-auto my-5">
       <base-button class="text-xs" @click="showDeleteDialog"
         >회원 탈퇴</base-button
       >
@@ -193,7 +190,7 @@ const SERVER_URL = process.env.VUE_APP_SERVER_URL;
 export default {
   components: {
     ReviewDesign,
-    BookmarkDesign,
+    BookmarkDesign
     // RestaurantCardSmall,
     // ReviewCardSmall,
   },
