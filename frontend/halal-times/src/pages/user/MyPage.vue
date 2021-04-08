@@ -1,7 +1,7 @@
 <template>
   <div
     id="bg"
-    class="G-market-sans font-color-black-400 w-7/12 mx-auto px-10 py-6 flex flex-col"
+    class="G-market-sans font-color-black-400 w-2/3 mx-auto px-10 py-6 flex flex-col"
   >
     <base-title>My Page</base-title>
     <span class="G-market-sans-B text-3xl mt-3 mb-4 mx-auto px-1 border-line"
